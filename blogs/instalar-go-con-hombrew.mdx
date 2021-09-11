@@ -1,0 +1,61 @@
+---
+title: Como instalar GO en mac con homebrew
+description: Pequeña guia de como instalar GO usando el conocido manejador de paquetes homebrew.
+locale: es
+alternate: /blog/instalar-go-con-homebrew
+isPublished: true
+publishedAt: "2021-09-04"
+tags:
+  - Go
+  - Golang
+  - homebrew
+  - GVM
+---
+
+#### Instalar homebrew (saltear si ya los has hecho)
+```bash
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```
+
+#### Actualizar e instalar GO.
+
+```bash
+brew update && brew install golang
+```
+#### Configurar el espacio de trabajo 
+Es considerado una buena practica usar la ruta $HOME/go para trabajar, entonces hagamos eso!
+```bash
+mkdir -p $HOME/go/{bin,src,pkg}
+```
+Nosotros hemos creado dos importantes carpetas bin y src estas serán usadas por GO
+
+#### Configurar el ambiente
+Nosotros vamos a necesitas añadir al archivo de configuración .bashrc o zshrc (si estas usando zsh) con la siguiente información. (Ej nano ~/.bashrc)
+```bash
+export GOPATH=$HOME/go
+export GOROOT="$(brew --prefix golang)/libexec"
+export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
+```
+recargar las configuraciones con 
+```bash
+source $HOME/.bashrc (or .zshrc )
+```
+Sienteté libre de empezar cualquier proyecto (hacer una nueva carpeta) en la ruta ~/go/src
+
+### Configuración extra: Instalar el controlador de versiones de GO - Go Version Manager (GVM)
+si tu deseas correr varias versiones de GO
+```bash
+bash < <(curl -s -S -L https://raw.githubusercontent.com/moovweb/gvm/master/binscripts/gvm-installer)
+```
+#### Listar todas las versiones de GO
+```bash
+gvm listall
+```
+#### Instalar versión específica de GO
+```bash
+gvm install go1.16.2
+```
+#### Seleccionar versión de GO por defecto a utilizar
+```bash
+gvm use go1.16.2 [--default]
+```

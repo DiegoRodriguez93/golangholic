@@ -1,0 +1,178 @@
+---
+title: Las variables y las constantes en GO
+description: Todo lo que tengo que saber sobre la variables y constantes en GO.
+locale: es
+alternate: /blog/variables-go
+isPublished: true
+publishedAt: "2021-09-05"
+tags:
+  - Go
+  - Golang
+  - variables
+  - constantes
+---
+
+#### Lo primero que debemos ver es como luce una variable en GO.
+```go
+var greetings string = "Welcome to Golangholic!"
+```
+podemos observar que la declaración de las variables tiene la siguiente estructura
+
+```go
+var nombre tipo = expresión
+```
+vemos que inicia con la palabra reservada var, luego el nombre de la variable, luego el tipo de dato 
+luego el = y por último el valor que le vayamos a asignar.
+
+#### Veamos un ejemplo en una función
+```go
+package main
+
+import "fmt"
+
+func main(){
+  var greetings string = "Welcome to Golangholic!"
+  fmt.Println(greetings)
+}
+
+// Esto imprime Welcome to Golangholic!
+```
+
+#### Algunas cosas a tener en cuenta
+- Los tipos de datos son fijos es decir que una variable no puede cambiar son tipo de dato durante su ciclo de vida.
+- Podemos declarar o iniciar una variable sin asignarle un valor.
+```go
+var greetings string
+```
+- Los valores iniciales de las variables a las cuales no se les ha asignado ningún valor son los siguientes: en los tipos numéricos inician en 0,
+los tipos string inician en vacio “”, los tipos boolean inician en falso, los demás tipos inician en nil (nulo). 
+
+- Se puede asignar en GO un grupo de variables de la siguiente manera:
+```go
+var (
+  nombre tipo
+  nombre2 tipo
+  nombre3 tipo
+)
+```
+
+- Ej: asignandoles valor:
+```go
+var (
+  a = 1
+  b = “hola”
+  c = true
+)
+```
+
+- Las variables pueden ser declaradas dentro de una función o por fuera de las funciones. Las que son declaradas dentro de una función
+ se llaman variables locales, las que son declaradas por fuera de una función se llaman variables globales estas tienen "Package Visibility"
+  las mismas pueden ser usadas en cualquier archivo .go que pertenezca al mismo paquete. Y aquellas variables declaradas a nivel
+   de paquete que sean declaradas con una letra mayúscula al principio, son variables públicas que pueden ser accedidas desde cualquier paquete.
+
+- Una cosa importante a tener en cuenta es que GO no permite la declaración de variables que no sean usadas.
+
+### Modo corto de declarar variables
+
+- Las variables locales (recordemos las declaradas dentro de las funciones) pueden ser declaradas con la manera corta de GO para declarar variables
+```go
+greetings := "Hello"
+```
+El motor de GO analiza la variable y asigna el tipo de dato correspondiente
+- También se puede asignar un grupo de variables de la manera corta de la siguiente manera
+```go
+nombre1, nombre2, nombre3 := 10, "Hola", true
+```
+
+### Nombrando variables en GO: Buenas prácticas
+
+El nombrado de las variables en GO es bastante flexible, pero aqui van algunas reglas para tener en cuenta:
+
+- Los nombres de las variables deben ser de una palabra (no se permiten espacios)
+- Los nombres de las variables pueden contener solo letras, números y guion bajo _
+- Los nombres de las variables no pueden empezar con un número.
+
+A continuación te dejo una tabla con ejemplos de diferentes casos:
+
+<table style={{width: "100%", textAlign: 'center'}}>
+<thead>
+  <tr style={{border: '1px solid blue'}}>
+    <th>Válido</th>
+    <th>Inválido</th>
+    <th>Porque es inválido</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr style={{border: '1px solid blue'}}>
+    <td>firstName</td>
+    <td>first-name</td>
+    <td>No se permiten guiones medio (-)</td>
+  </tr>
+  <tr style={{border: '1px solid blue'}}>
+    <td>age18</td>
+    <td>18age</td>
+    <td>No puede inciar con un número</td>
+  </tr>
+  <tr style={{border: '1px solid blue'}}>
+    <td>lastName</td>
+    <td>$lastName</td>
+    <td>No se pueden usar símbolos</td>
+  </tr>
+  <tr style={{border: '1px solid blue'}}>
+    <td>userName</td>
+    <td>user name</td>
+    <td>No puede haber espacios</td>
+  </tr>
+  </tbody>
+</table>
+
+Que una variable este en PascalCase tiene un significado especial para GO, esto genera que la variable sea accesible por otros paquetes. EJ:
+```go
+var FirstName string // accesible por otros paquetes (PascalCase)
+var firstName string // NO accesible por otros paquetes (CamelCase)
+``` 
+
+#### Reasignación del valor de una variable
+
+Como su nombre lo dice nosotros podemos variar el valor de una variable. Veamos un ejemplo
+
+```go
+package main
+
+import "fmt"
+
+func main() {
+    name := "Diego"
+    fmt.Println(i)
+
+    name = "Juan" 
+    // Un importante detalle es que la reasingnación se lográ con = 
+    // si lo hacemos con := esto nos generará un error de compilación
+    fmt.Println(i)
+}
+
+// Imprime
+Diego
+Juan
+```
+
+Algo que no podemos hacer es reasignar un valor de otro tipo veamos un Ej
+
+```go
+yearOfBirth := 1993
+yearOfBirth = "1994"
+```
+Esto nos generará un error de compilación
+```go
+// Imprime
+cannot use "1994" (type string) as type int in assignmen
+```
+
+### Constantes
+
+Las constantes son como las varias exepto que no se puede reasignar su valor después que han sido definidas
+Para declarar una constante debemos simplemente usar esta sintaxis
+```go
+const name = "Golangholic"
+```
+### Gracias por leer 🙌

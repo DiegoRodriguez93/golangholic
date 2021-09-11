@@ -1,0 +1,67 @@
+{
+  "root": true,
+
+  "env": {
+    "node": true,
+    "browser": true,
+    "amd": true,
+    "jest": true
+  },
+
+  "parser": "@typescript-eslint/parser",
+
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@next/next/recommended",
+    "plugin:jsx-a11y/recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "plugin:jest/recommended",
+    "plugin:jest-dom/recommended",
+    "plugin:testing-library/react",
+    "plugin:prettier/recommended",
+    "prettier"
+  ],
+
+  "plugins": [
+    "@typescript-eslint",
+    "@next/next",
+    "jest",
+    "jest-dom",
+    "jsx-a11y",
+    "react",
+    "react-hooks",
+    "testing-library",
+    "prettier"
+  ],
+
+  "rules": {
+    "prettier/prettier": "error",
+
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off"
+  },
+
+  "settings":  {
+    "react":  {
+      "version":  "detect"
+    },
+    "import/parsers": {
+      "@typescript-eslint/parser": [".ts", ".tsx"]
+    },
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true
+      }
+    }
+  }
+}

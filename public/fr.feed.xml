@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[Blog de William Beuil]]></title>
+        <description><![CDATA[Toute mon aventure en tant que développeur.]]></description>
+        <link>https://wbeuill.com/fr</link>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Sat, 11 Sep 2021 00:25:17 GMT</lastBuildDate>
+        <atom:link href="https://wbeuill.com/fr.feed.xml" rel="self" type="application/rss+xml"/>
+        <language><![CDATA[es]]></language>
+        <item>
+            <title><![CDATA[Las variables y las constantes en GO]]></title>
+            <description><![CDATA[Todo lo que tengo que saber sobre la variables y constantes en GO.]]></description>
+            <link>https://wbeuill.com/fr/blog/variables-constantes-go</link>
+            <guid isPermaLink="true">https://wbeuill.com/fr/blog/variables-constantes-go</guid>
+            <category><![CDATA[Go]]></category>
+            <category><![CDATA[Golang]]></category>
+            <category><![CDATA[variables]]></category>
+            <category><![CDATA[constantes]]></category>
+            <dc:creator><![CDATA[William Beuil]]></dc:creator>
+            <pubDate>Sun, 05 Sep 2021 00:00:00 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[Como instalar GO en mac con homebrew]]></title>
+            <description><![CDATA[Pequeña guia de como instalar GO usando el conocido manejador de paquetes homebrew.]]></description>
+            <link>https://wbeuill.com/fr/blog/instalar-go-con-hombrew</link>
+            <guid isPermaLink="true">https://wbeuill.com/fr/blog/instalar-go-con-hombrew</guid>
+            <category><![CDATA[Go]]></category>
+            <category><![CDATA[Golang]]></category>
+            <category><![CDATA[homebrew]]></category>
+            <category><![CDATA[GVM]]></category>
+            <dc:creator><![CDATA[William Beuil]]></dc:creator>
+            <pubDate>Sat, 04 Sep 2021 00:00:00 GMT</pubDate>
+        </item>
+    </channel>
+</rss>
