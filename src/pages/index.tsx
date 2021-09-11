@@ -19,8 +19,8 @@ const Home: React.FC = () => {
           <p className='mb-4'>{i18n.t('home.about.2')}</p>
           <p>{i18n.t('home.about.3')}</p>
         </div>
-        <div className='absolute top-0 w-full h-full bg-orange rounded-lg transform -rotate-1.5 -z-10' />
-        <div className='absolute top-0 w-full h-full bg-orange opacity-20 rounded-lg transform rotate-1 -z-20' />
+        <div className='absolute top-0 w-full h-full bg-blue rounded-lg transform -rotate-1.5 -z-10' />
+        <div className='absolute top-0 w-full h-full bg-blue opacity-20 rounded-lg transform rotate-1 -z-20' />
       </div>
       {/*       <h2 className='text-2xl font-medium my-16'>
         {i18n.t('home.footerInfo')}

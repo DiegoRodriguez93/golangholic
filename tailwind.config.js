@@ -18,6 +18,7 @@ module.exports = {
         secondary: 'var(--color-bg-secondary)',
         tertiary: 'var(--color-bg-tertiary)',
         orange: 'var(--color-orange-primary)',
+        blue: 'var(--color-blue-primary)',
       },
       textColor: {
         primary: 'var(--color-text-primary)',
