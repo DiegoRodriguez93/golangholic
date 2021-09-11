@@ -35,7 +35,7 @@ const BlogContainer: React.FC<Blog> = ({ code, frontmatter, readingTime }) => {
 
   const seo = {
     type: 'article',
-    image: `https://golangholic.com/api${router.asPath}`,
+    image: `https://golangholic.vercel.app//api${router.asPath}`,
     imageAlt: frontmatter.title,
     ...frontmatter,
   };

@@ -18,7 +18,7 @@ export const sendVitals = (): void => {
       }
       if (
         process.env.NODE_ENV === 'production' &&
-        window.location.hostname === 'golangholic.com'
+        window.location.hostname === 'golangholic.vercel.app'
       ) {
         const body = JSON.stringify(queue);
         const url = '/api/metrics/webvitals';

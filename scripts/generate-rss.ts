@@ -4,22 +4,22 @@ import path from 'path';
 import fs from 'fs';
 
 const OUTPUT_FILE_EN = path.resolve(__dirname, '..', 'public', 'en.feed.xml');
-const OUTPUT_FILE_FR = path.resolve(__dirname, '..', 'public', 'fr.feed.xml');
+const OUTPUT_FILE_ES = path.resolve(__dirname, '..', 'public', 'es.feed.xml');
 
 (async () => {
   const feedEN = new RSS({
-    title: "William Beuil's Blog",
-    description: 'Everything about my adventure as a developer.',
-    site_url: 'https://wbeuill.com',
-    feed_url: 'https://wbeuill.com/en.feed.xml',
+    title: "Diego Rodriguez's Blog",
+    description: 'Golangholic.',
+    site_url: 'https://golangholic.vercel.app',
+    feed_url: 'https://golangholic.vercel.app/en.feed.xml',
     language: 'en',
   });
 
-  const feedFR = new RSS({
-    title: 'Blog de William Beuil',
-    description: 'Toute mon aventure en tant que développeur.',
-    site_url: 'https://wbeuill.com/fr',
-    feed_url: 'https://wbeuill.com/fr.feed.xml',
+  const feedES = new RSS({
+    title: 'Blog de Diego Rodriguez',
+    description: 'Golangholic.',
+    site_url: 'https://golangholic.vercel.app/es',
+    feed_url: 'https://golangholic.vercel.app/es.feed.xml',
     language: 'es',
   });
 
@@ -51,19 +51,19 @@ const OUTPUT_FILE_FR = path.resolve(__dirname, '..', 'public', 'fr.feed.xml');
       if (blog.locale === 'en') {
         feedEN.item({
           title: blog.title,
-          url: `https://wbeuill.com/blog/${blog.slug}`,
+          url: `https://golangholic.vercel.app/blog/${blog.slug}`,
           description: blog.description,
           categories: blog.tags,
-          author: 'William Beuil',
+          author: 'Diego Rodriguez',
           date: blog.publishedAt,
         });
       } else {
-        feedFR.item({
+        feedES.item({
           title: blog.title,
-          url: `https://wbeuill.com/fr/blog/${blog.slug}`,
+          url: `https://golangholic.vercel.app/es/blog/${blog.slug}`,
           description: blog.description,
           categories: blog.tags,
-          author: 'William Beuil',
+          author: 'Diego Rodriguez',
           date: blog.publishedAt,
         });
       }
@@ -72,6 +72,6 @@ const OUTPUT_FILE_FR = path.resolve(__dirname, '..', 'public', 'fr.feed.xml');
   fs.writeFileSync(OUTPUT_FILE_EN, feedEN.xml({ indent: true }));
   console.log(`RSS feed written at ${OUTPUT_FILE_EN}`);
 
-  fs.writeFileSync(OUTPUT_FILE_FR, feedFR.xml({ indent: true }));
-  console.log(`RSS feed written at ${OUTPUT_FILE_FR}`);
+  fs.writeFileSync(OUTPUT_FILE_ES, feedES.xml({ indent: true }));
+  console.log(`RSS feed written at ${OUTPUT_FILE_ES}`);
 })();

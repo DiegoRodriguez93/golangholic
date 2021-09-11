@@ -8,7 +8,7 @@ const OUTPUT_FILE = path.resolve(__dirname, '..', 'public', 'sitemap.xml');
 
 (async () => {
   const sitemap = new SitemapStream({
-    hostname: 'https://wbeuill.com',
+    hostname: 'https://golangholic.vercel.app',
     xmlns: {
       xhtml: true,
       news: false,
@@ -40,8 +40,8 @@ const OUTPUT_FILE = path.resolve(__dirname, '..', 'public', 'sitemap.xml');
       sitemap.write({
         url: locale === 'en' ? url : `/es${url}`,
         links: [
-          { lang: 'en', url: `https://wbeuill.com${url}` },
-          { lang: 'es', url: `https://wbeuill.com/fr${url}` },
+          { lang: 'en', url: `https://golangholic.vercel.app${url}` },
+          { lang: 'es', url: `https://golangholic.vercel.app/es${url}` },
         ],
       });
     }
@@ -64,15 +64,15 @@ const OUTPUT_FILE = path.resolve(__dirname, '..', 'public', 'sitemap.xml');
             lang: 'en',
             url:
               data.locale === 'en'
-                ? `https://wbeuill.com${url}`
-                : `https://wbeuill.com${data.alternate}`,
+                ? `https://golangholic.vercel.app${url}`
+                : `https://golangholic.vercel.app${data.alternate}`,
           },
           {
             lang: 'es',
             url:
               data.locale === 'en'
-                ? `https://wbeuill.com/es${data.alternate}`
-                : `https://wbeuill.com/es${url}`,
+                ? `https://golangholic.vercel.app/es${data.alternate}`
+                : `https://golangholic.vercel.app/es${url}`,
           },
         ],
       });

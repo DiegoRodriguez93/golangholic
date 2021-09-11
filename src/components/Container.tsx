@@ -49,7 +49,10 @@ const Container: React.FC<ContainerProps> = ({ children, seo = {} }) => {
         <meta property='og:image:alt' content={meta.imageAlt} />
         <meta property='og:image:width' content='1200' />
         <meta property='og:image:height' content='628' />
-        <meta property='og:url' content={`https://golangholic.com${path}`} />
+        <meta
+          property='og:url'
+          content={`https://golangholic.vercel.app${path}`}
+        />
         <meta property='og:locale' content={isEN ? 'en_US' : 'es_ES'} />
         <meta
           property='og:locale:alternate'
@@ -80,24 +83,24 @@ const Container: React.FC<ContainerProps> = ({ children, seo = {} }) => {
         <meta name='twitter:description' content={meta.description} />
         <meta name='twitter:image' content={meta.image} />
         <meta name='twitter:image:alt' content={meta.imageAlt} />
-        <link rel='canonical' href={`https://golangholic.com${path}`} />
+        <link rel='canonical' href={`https://golangholic.vercel.app${path}`} />
         <link
           rel='alternate'
-          href={`https://golangholic.com${
+          href={`https://golangholic.vercel.app${
             isArticle && meta.locale !== 'en' ? meta.alternate : router.asPath
           }`}
           hrefLang='en'
         />
         <link
           rel='alternate'
-          href={`https://golangholic.com/es${
+          href={`https://golangholic.vercel.app/es${
             isArticle && meta.locale !== 'es' ? meta.alternate : router.asPath
           }`}
           hrefLang='es'
         />
         <link
           rel='alternate'
-          href={`https://golangholic.com${
+          href={`https://golangholic.vercel.app${
             isArticle && meta.locale !== 'en' ? meta.alternate : router.asPath
           }`}
           hrefLang='x-default'

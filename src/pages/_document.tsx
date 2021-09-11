@@ -70,7 +70,7 @@ class MyDocument extends Document<DocumentProps & CustomProps> {
               <script
                 async
                 defer
-                data-domain='golangholic.com'
+                data-domain='golangholic.vercel.app'
                 src='/js/script.js'
                 nonce={nonce}
               />

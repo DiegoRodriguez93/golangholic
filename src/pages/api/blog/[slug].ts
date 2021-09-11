@@ -11,7 +11,7 @@ export default async (
 
   if (slug) {
     const response = await fetch(
-      `https://raw.githubusercontent.com/diegorodriguez93/golangholic.com/main/blogs/${slug}.mdx`,
+      `https://raw.githubusercontent.com/diegorodriguez93/golangholic.vercel.app/main/blogs/${slug}.mdx`,
     );
 
     if (!response.ok) {

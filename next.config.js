@@ -12,7 +12,7 @@ manifest-src 'self';
 style-src 'self' 'unsafe-inline';
 connect-src 'self' ${
   process.env.NODE_ENV === 'production'
-    ? 'https://vitals.vercel-insights.com https://analytics.wbeuill.com'
+    ? ''
     : ''
 };
 `;
@@ -62,11 +62,11 @@ module.exports = {
       {
         source: '/js/script.js',
         destination:
-          'https://analytics.wbeuill.com/js/plausible.outbound-links.js',
+          'https://analytics.https://golangholic.vercel.app/js/plausible.outbound-links.js',
       },
       {
         source: '/api/event',
-        destination: 'https://analytics.wbeuill.com/api/event',
+        destination: 'https://analytics.https://golangholic.vercel.app/api/event',
       },
     ];
   },

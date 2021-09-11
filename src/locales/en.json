@@ -4,8 +4,8 @@
   },
   "seo": {
     "image": {
-      "url": "https://golangholic.com/images/preview.png",
-      "alt": "Banner for site golangholic.com"
+      "url": "https://golangholic.vercel.app/images/preview.png",
+      "alt": "Banner for site golangholic.vercel.app"
     },
     "rss": {
       "en": "RSS feed for english speaker",
