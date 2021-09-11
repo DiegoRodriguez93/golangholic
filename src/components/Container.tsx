@@ -70,7 +70,7 @@ const Container: React.FC<ContainerProps> = ({ children, seo = {} }) => {
                 content={new Date(meta.modifiedAt).toISOString()}
               />
             )}
-            <meta property='article:author' content='William Beuil' />
+            <meta property='article:author' content='Diego Rodriguez' />
             {(meta.tags as unknown as string[]).map((tag) => (
               <meta key={tag} property='article:tag' content={tag} />
             ))}

@@ -7,5 +7,5 @@ test('render home page', async () => {
 
   expect(
     screen.getByRole('heading', { level: 1 }).textContent,
-  ).toMatchInlineSnapshot(`"Hi there 👋, I'm William Beuil"`);
+  ).toMatchInlineSnapshot(`"Welcome to 👋 Golangholic"`);
 });
