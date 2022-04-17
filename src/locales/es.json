@@ -25,8 +25,8 @@
   "home": {
     "welcome": "Bienvenido a 👋 Picadores de codigo",
     "about": {
-      "1": "Soy un programador uruguayo enfocado en React, Next.js, Node y por supuesto en Go. Actualmente trabajo como SR Dev. en Encora, hace un tiempo empecé a experimentar con Go y ahora lo amo.",
-      "2": "Con este sitio web, a mi me gustaría ayudar a aquellos que recién inician en el mundo de Go a tener una guia clara y contreta a la cual consultar.",
+      "1": "Soy un programador uruguayo enfocado en React, Next.js, Node, Go y Solidity. Actualmente trabajo como SR Dev. en Encora, hace un tiempo empecé a experimentar con Web3 y ahora lo amo.",
+      "2": "Con este sitio web, a mi me gustaría ayudar a aquellos que recién inician en este mundo a tener una guia clara y contreta a la cual consultar, también a que la gente conozca mas acerca de mi trabajo.",
       "3": "Un poco más acerca de mi, me gusta mucho estar en contacto con la naturaleza, salir de camping, de pesca, amo mucho a mi familia ellos son mi fuente de inspiración para salir disparado de la cama cada mañana."
     },
     "footerInfo": "My contribution to the community",
