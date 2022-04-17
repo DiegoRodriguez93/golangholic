@@ -1,5 +1,6 @@
 import { I18nProvider } from 'next-localization';
 import { useRouter } from 'next/router';
+import NextNProgress from 'nextjs-progressbar';
 import 'focus-visible';
 
 import { addToQueue, sendVitals } from 'utils/vitals';
@@ -18,9 +19,12 @@ const MyApp = ({ Component, pageProps }: AppProps): JSX.Element => {
   const router = useRouter();
 
   return (
-    <I18nProvider lngDict={lngDict} locale={router?.locale as string}>
-      <Component {...rest} />
-    </I18nProvider>
+    <>
+      <NextNProgress height={5} />
+      <I18nProvider lngDict={lngDict} locale={router?.locale as string}>
+        <Component {...rest} />
+      </I18nProvider>
+    </>
   );
 };
 
