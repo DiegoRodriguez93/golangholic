@@ -4,8 +4,8 @@
   },
   "seo": {
     "image": {
-      "url": "https://golangholic.vercel.app/images/preview-es.png",
-      "alt": "Banner para el sitio golangholic.vercel.app"
+      "url": "https://codeholics.vercel.app/images/preview-es.png",
+      "alt": "Banner para el sitio codeholics.vercel.app"
     },
     "rss": {
       "en": "RSS feed for english speaker",
@@ -23,7 +23,7 @@
     "contact": "Hecho con ❤️ por "
   },
   "home": {
-    "welcome": "Bienvenido a 👋 Golangholic",
+    "welcome": "Bienvenido a 👋 Codeholics",
     "about": {
       "1": "Soy un programador uruguayo enfocado en React, Next.js, Node y por supuesto en Go. Actualmente trabajo como SR Dev. en Encora, hace un tiempo empecé a experimentar con Go y ahora lo amo.",
       "2": "Con este sitio web, a mi me gustaría ayudar a aquellos que recién inician en el mundo de Go a tener una guia clara y contreta a la cual consultar.",
@@ -31,7 +31,7 @@
     },
     "footerInfo": "My contribution to the community",
     "seo": {
-      "title": "Golangholic",
+      "title": "Codeholics",
       "description": "React, Next, Node y Goholic."
     }
   },
@@ -46,7 +46,7 @@
     "copy-success": "Copiado",
     "copy-error": "Error",
     "seo": {
-      "title": "Blog – Golangholic",
+      "title": "Blog – Codeholics",
       "description": "All blog posts that sum up everything about my adventure as a developer."
     }
   },
@@ -56,7 +56,7 @@
     "pageviews": "Total de Visitas",
     "vitals": "Web Vitals",
     "seo": {
-      "title": "Metricas – Golangholic",
+      "title": "Metricas – Codeholics",
       "description": "Un dashboard acerca de las metricas."
     }
   },
@@ -65,8 +65,8 @@
     "subtitle": "Lo siento pero la página que buscas no existe. Tal vez expiró, tal vez un error de tipeo. Podrías iniciar una nueva busqueda o scrollear en mi pestaña de blog.",
     "button": "Volver al incio",
     "seo": {
-      "title": "404 – Golangholic",
-      "description": "React, Next, Node and Golangholic."
+      "title": "404 – Codeholics",
+      "description": "React, Next, Node and Codeholics."
     }
   },
   "500": {
@@ -74,8 +74,8 @@
     "subtitle": "No se como pero le has errado feo... Por favor intentá de nuevo o simplemente vuelve al inicio.",
     "button": "Volver al incio",
     "seo": {
-      "title": "500 – Golangholic",
-      "description": "React, Next, Node and Golangholic."
+      "title": "500 – Codeholics",
+      "description": "React, Next, Node and Codeholics."
     }
   }
 }

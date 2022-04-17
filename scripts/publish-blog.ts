@@ -17,8 +17,8 @@ const generateBlog = (slug: string): Record<string, unknown> => {
   const { data, content } = matter(source.trim());
   const canonicalUrl =
     data.locale === 'en'
-      ? `https://golangholic.vercel.app/blog/${slug}`
-      : `https://golangholic.vercel.app/es/blog/${slug}`;
+      ? `https://codeholics.vercel.app/blog/${slug}`
+      : `https://codeholics.vercel.app/es/blog/${slug}`;
 
   return {
     ...data,
@@ -30,11 +30,11 @@ const generateBlog = (slug: string): Record<string, unknown> => {
 const replaceRelativePath = (content: string): string => {
   const withoutRelativeImage = content.replace(
     /\]\(\/images(?!https?:\/\/)/gi,
-    '](' + 'https://golangholic.vercel.app/images',
+    '](' + 'https://codeholics.vercel.app/images',
   );
   return withoutRelativeImage.replace(
     /\]\((?!https?:\/\/)/gi,
-    '](' + 'https://golangholic.vercel.app',
+    '](' + 'https://codeholics.vercel.app',
   );
 };
 

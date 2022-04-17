@@ -10,11 +10,7 @@ img-src 'self';
 font-src 'self';
 manifest-src 'self';
 style-src 'self' 'unsafe-inline';
-connect-src 'self' ${
-  process.env.NODE_ENV === 'production'
-    ? ''
-    : ''
-};
+connect-src 'self' ${process.env.NODE_ENV === 'production' ? '' : ''};
 `;
 
 const PermissionsPolicy = `
@@ -62,11 +58,12 @@ module.exports = {
       {
         source: '/js/script.js',
         destination:
-          'https://analytics.https://golangholic.vercel.app/js/plausible.outbound-links.js',
+          'https://analytics.https://codeholics.vercel.app/js/plausible.outbound-links.js',
       },
       {
         source: '/api/event',
-        destination: 'https://analytics.https://golangholic.vercel.app/api/event',
+        destination:
+          'https://analytics.https://codeholics.vercel.app/api/event',
       },
     ];
   },

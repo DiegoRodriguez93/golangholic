@@ -7,4 +7,4 @@
 
 ## Website
 
-[https://golangholic.vercel.app](https://golangholic.vercel.app)
+[https://codeholics.vercel.app](https://codeholics.vercel.app)

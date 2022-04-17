@@ -4,8 +4,8 @@
   },
   "seo": {
     "image": {
-      "url": "https://golangholic.vercel.app/images/preview.png",
-      "alt": "Banner for site golangholic.vercel.app"
+      "url": "https://codeholics.vercel.app/images/preview.png",
+      "alt": "Banner for site codeholics.vercel.app"
     },
     "rss": {
       "en": "RSS feed for english speaker",
@@ -23,7 +23,7 @@
     "contact": "Made with ❤️ by "
   },
   "home": {
-    "welcome": "Welcome to 👋 Golangholic",
+    "welcome": "Welcome to 👋 Codeholics",
     "about": {
       "1": "I'm a uruguayan developper focusing on React, Next.js, Node and of course in Go. Currently working at Encora, I'm starting experiencing Go and I'm loving it so far.",
       "2": "With this website, I would like to help those who are just beginning with Go to have a clear and solid guide.",
@@ -31,8 +31,8 @@
     },
     "footerInfo": "My contribution to the community",
     "seo": {
-      "title": "Golangholic",
-      "description": "React, Next, Node and Golangholic."
+      "title": "Codeholics",
+      "description": "React, Next, Node and Codeholics."
     }
   },
   "blog": {
@@ -46,7 +46,7 @@
     "copy-success": "Copied",
     "copy-error": "Error",
     "seo": {
-      "title": "Blog – Golangholic",
+      "title": "Blog – Codeholics",
       "description": "All blog posts that sum up everything about how to dance with GO."
     }
   },
@@ -56,7 +56,7 @@
     "pageviews": "Total Pageviews",
     "vitals": "Web Vitals",
     "seo": {
-      "title": "Metrics – Golangholic",
+      "title": "Metrics – Codeholics",
       "description": "A dashboard about the metrics I track on my website."
     }
   },
@@ -65,8 +65,8 @@
     "subtitle": "I'm sorry if the page you're looking for does not exist. It may have expired, or there could be a typo. Maybe you can find what you want from my homepage.",
     "button": "Go Back Home",
     "seo": {
-      "title": "404 – Golangholic",
-      "description": "React, Next, Node and Golangholic."
+      "title": "404 – Codeholics",
+      "description": "React, Next, Node and Codeholics."
     }
   },
   "500": {
@@ -74,8 +74,8 @@
     "subtitle": "I don't know what you did but you've just destroyed my website... Please try again in a few minutes or just return to my homepage.",
     "button": "Go Back Home",
     "seo": {
-      "title": "500 – Golangholic",
-      "description": "React, Next, Node and Golangholic."
+      "title": "500 – Codeholics",
+      "description": "React, Next, Node and Codeholics."
     }
   }
 }

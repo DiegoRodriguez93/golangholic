@@ -14,14 +14,14 @@ tags:
 
 #### Lo primero que debemos ver es como luce una variable en GO.
 ```go
-var greetings string = "Welcome to Golangholic!"
+var greetings string = "Welcome to Codeholics!"
 ```
 podemos observar que la declaración de las variables tiene la siguiente estructura
 
 ```go
 var nombre tipo = expresión
 ```
-vemos que inicia con la palabra reservada var, luego el nombre de la variable, luego el tipo de dato 
+vemos que inicia con la palabra reservada var, luego el nombre de la variable, luego el tipo de dato
 luego el = y por último el valor que le vayamos a asignar.
 
 #### Veamos un ejemplo en una función
@@ -31,11 +31,11 @@ package main
 import "fmt"
 
 func main(){
-  var greetings string = "Welcome to Golangholic!"
+  var greetings string = "Welcome to Codeholics!"
   fmt.Println(greetings)
 }
 
-// Esto imprime Welcome to Golangholic!
+// Esto imprime Welcome to Codeholics!
 ```
 
 #### Algunas cosas a tener en cuenta
@@ -45,7 +45,7 @@ func main(){
 var greetings string
 ```
 - Los valores iniciales de las variables a las cuales no se les ha asignado ningún valor son los siguientes: en los tipos numéricos inician en 0,
-los tipos string inician en vacio “”, los tipos boolean inician en falso, los demás tipos inician en nil (nulo). 
+los tipos string inician en vacio “”, los tipos boolean inician en falso, los demás tipos inician en nil (nulo).
 
 - Se puede asignar en GO un grupo de variables de la siguiente manera:
 ```go
@@ -130,7 +130,7 @@ Que una variable este en PascalCase tiene un significado especial para GO, esto 
 ```go
 var FirstName string // accesible por otros paquetes (PascalCase)
 var firstName string // NO accesible por otros paquetes (CamelCase)
-``` 
+```
 
 #### Reasignación del valor de una variable
 
@@ -145,8 +145,8 @@ func main() {
     name := "Diego"
     fmt.Println(i)
 
-    name = "Juan" 
-    // Un importante detalle es que la reasingnación se lográ con = 
+    name = "Juan"
+    // Un importante detalle es que la reasingnación se lográ con =
     // si lo hacemos con := esto nos generará un error de compilación
     fmt.Println(i)
 }
@@ -173,6 +173,6 @@ cannot use "1994" (type string) as type int in assignmen
 Las constantes son como las varias exepto que no se puede reasignar su valor después que han sido definidas
 Para declarar una constante debemos simplemente usar esta sintaxis
 ```go
-const name = "Golangholic"
+const name = "Codeholics"
 ```
 ### Gracias por leer 🙌
