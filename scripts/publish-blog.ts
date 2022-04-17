@@ -17,8 +17,8 @@ const generateBlog = (slug: string): Record<string, unknown> => {
   const { data, content } = matter(source.trim());
   const canonicalUrl =
     data.locale === 'en'
-      ? `https://codeholics.vercel.app/blog/${slug}`
-      : `https://codeholics.vercel.app/es/blog/${slug}`;
+      ? `https://picadores-de-codigo.vercel.app/blog/${slug}`
+      : `https://picadores-de-codigo.vercel.app/es/blog/${slug}`;
 
   return {
     ...data,
@@ -30,11 +30,11 @@ const generateBlog = (slug: string): Record<string, unknown> => {
 const replaceRelativePath = (content: string): string => {
   const withoutRelativeImage = content.replace(
     /\]\(\/images(?!https?:\/\/)/gi,
-    '](' + 'https://codeholics.vercel.app/images',
+    '](' + 'https://picadores-de-codigo.vercel.app/images',
   );
   return withoutRelativeImage.replace(
     /\]\((?!https?:\/\/)/gi,
-    '](' + 'https://codeholics.vercel.app',
+    '](' + 'https://picadores-de-codigo.vercel.app',
   );
 };
 

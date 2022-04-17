@@ -70,7 +70,7 @@ class MyDocument extends Document<DocumentProps & CustomProps> {
               <script
                 async
                 defer
-                data-domain='codeholics.vercel.app'
+                data-domain='picadores-de-codigo.vercel.app'
                 src='/js/script.js'
                 nonce={nonce}
               />

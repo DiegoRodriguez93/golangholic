@@ -7,5 +7,5 @@ test('render home page', async () => {
 
   expect(
     screen.getByRole('heading', { level: 1 }).textContent,
-  ).toMatchInlineSnapshot(`"Welcome to 👋 Codeholics"`);
+  ).toMatchInlineSnapshot(`"Welcome to 👋 Picadores de codigo"`);
 });

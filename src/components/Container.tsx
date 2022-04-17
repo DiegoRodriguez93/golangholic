@@ -38,7 +38,7 @@ const Container: React.FC<ContainerProps> = ({ children, seo = {} }) => {
           name='viewport'
           content='width=device-width, initial-scale=1, shrink-to-fit=no'
         />
-        <meta property='og:site_name' content='Codeholics' />
+        <meta property='og:site_name' content='Picadores de codigo' />
         <meta property='og:title' content={meta.title} />
         <meta property='og:description' content={meta.description} />
         <meta property='og:type' content={meta.type} />
@@ -51,7 +51,7 @@ const Container: React.FC<ContainerProps> = ({ children, seo = {} }) => {
         <meta property='og:image:height' content='628' />
         <meta
           property='og:url'
-          content={`https://codeholics.vercel.app${path}`}
+          content={`https://picadores-de-codigo.vercel.app${path}`}
         />
         <meta property='og:locale' content={isEN ? 'en_US' : 'es_ES'} />
         <meta
@@ -77,30 +77,33 @@ const Container: React.FC<ContainerProps> = ({ children, seo = {} }) => {
           </>
         )}
         <meta name='twitter:card' content='summary_large_image' />
-        <meta name='twitter:site' content='@codeholics' />
-        <meta name='twitter:creator' content='@codeholics' />
+        <meta name='twitter:site' content='@picadores-de-codigo' />
+        <meta name='twitter:creator' content='@picadores-de-codigo' />
         <meta name='twitter:title' content={meta.title} />
         <meta name='twitter:description' content={meta.description} />
         <meta name='twitter:image' content={meta.image} />
         <meta name='twitter:image:alt' content={meta.imageAlt} />
-        <link rel='canonical' href={`https://codeholics.vercel.app${path}`} />
+        <link
+          rel='canonical'
+          href={`https://picadores-de-codigo.vercel.app${path}`}
+        />
         <link
           rel='alternate'
-          href={`https://codeholics.vercel.app${
+          href={`https://picadores-de-codigo.vercel.app${
             isArticle && meta.locale !== 'en' ? meta.alternate : router.asPath
           }`}
           hrefLang='en'
         />
         <link
           rel='alternate'
-          href={`https://codeholics.vercel.app/es${
+          href={`https://picadores-de-codigo.vercel.app/es${
             isArticle && meta.locale !== 'es' ? meta.alternate : router.asPath
           }`}
           hrefLang='es'
         />
         <link
           rel='alternate'
-          href={`https://codeholics.vercel.app${
+          href={`https://picadores-de-codigo.vercel.app${
             isArticle && meta.locale !== 'en' ? meta.alternate : router.asPath
           }`}
           hrefLang='x-default'

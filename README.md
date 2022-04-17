@@ -7,4 +7,4 @@
 
 ## Website
 
-[https://codeholics.vercel.app](https://codeholics.vercel.app)
+[https://picadores-de-codigo.vercel.app](https://picadores-de-codigo.vercel.app)

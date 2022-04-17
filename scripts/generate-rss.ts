@@ -9,17 +9,17 @@ const OUTPUT_FILE_ES = path.resolve(__dirname, '..', 'public', 'es.feed.xml');
 (async () => {
   const feedEN = new RSS({
     title: "Diego Rodriguez's Blog",
-    description: 'Codeholics.',
-    site_url: 'https://codeholics.vercel.app',
-    feed_url: 'https://codeholics.vercel.app/en.feed.xml',
+    description: 'Picadores de codigo.',
+    site_url: 'https://picadores-de-codigo.vercel.app',
+    feed_url: 'https://picadores-de-codigo.vercel.app/en.feed.xml',
     language: 'en',
   });
 
   const feedES = new RSS({
     title: 'Blog de Diego Rodriguez',
-    description: 'Codeholics.',
-    site_url: 'https://codeholics.vercel.app/es',
-    feed_url: 'https://codeholics.vercel.app/es.feed.xml',
+    description: 'Picadores de codigo.',
+    site_url: 'https://picadores-de-codigo.vercel.app/es',
+    feed_url: 'https://picadores-de-codigo.vercel.app/es.feed.xml',
     language: 'es',
   });
 
@@ -51,7 +51,7 @@ const OUTPUT_FILE_ES = path.resolve(__dirname, '..', 'public', 'es.feed.xml');
       if (blog.locale === 'en') {
         feedEN.item({
           title: blog.title,
-          url: `https://codeholics.vercel.app/blog/${blog.slug}`,
+          url: `https://picadores-de-codigo.vercel.app/blog/${blog.slug}`,
           description: blog.description,
           categories: blog.tags,
           author: 'Diego Rodriguez',
@@ -60,7 +60,7 @@ const OUTPUT_FILE_ES = path.resolve(__dirname, '..', 'public', 'es.feed.xml');
       } else {
         feedES.item({
           title: blog.title,
-          url: `https://codeholics.vercel.app/es/blog/${blog.slug}`,
+          url: `https://picadores-de-codigo.vercel.app/es/blog/${blog.slug}`,
           description: blog.description,
           categories: blog.tags,
           author: 'Diego Rodriguez',

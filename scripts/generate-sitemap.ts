@@ -8,7 +8,7 @@ const OUTPUT_FILE = path.resolve(__dirname, '..', 'public', 'sitemap.xml');
 
 (async () => {
   const sitemap = new SitemapStream({
-    hostname: 'https://codeholics.vercel.app',
+    hostname: 'https://picadores-de-codigo.vercel.app',
     xmlns: {
       xhtml: true,
       news: false,
@@ -40,8 +40,11 @@ const OUTPUT_FILE = path.resolve(__dirname, '..', 'public', 'sitemap.xml');
       sitemap.write({
         url: locale === 'en' ? url : `/es${url}`,
         links: [
-          { lang: 'en', url: `https://codeholics.vercel.app${url}` },
-          { lang: 'es', url: `https://codeholics.vercel.app/es${url}` },
+          { lang: 'en', url: `https://picadores-de-codigo.vercel.app${url}` },
+          {
+            lang: 'es',
+            url: `https://picadores-de-codigo.vercel.app/es${url}`,
+          },
         ],
       });
     }
@@ -64,15 +67,15 @@ const OUTPUT_FILE = path.resolve(__dirname, '..', 'public', 'sitemap.xml');
             lang: 'en',
             url:
               data.locale === 'en'
-                ? `https://codeholics.vercel.app${url}`
-                : `https://codeholics.vercel.app${data.alternate}`,
+                ? `https://picadores-de-codigo.vercel.app${url}`
+                : `https://picadores-de-codigo.vercel.app${data.alternate}`,
           },
           {
             lang: 'es',
             url:
               data.locale === 'en'
-                ? `https://codeholics.vercel.app/es${data.alternate}`
-                : `https://codeholics.vercel.app/es${url}`,
+                ? `https://picadores-de-codigo.vercel.app/es${data.alternate}`
+                : `https://picadores-de-codigo.vercel.app/es${url}`,
           },
         ],
       });

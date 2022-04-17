@@ -58,12 +58,12 @@ module.exports = {
       {
         source: '/js/script.js',
         destination:
-          'https://analytics.https://codeholics.vercel.app/js/plausible.outbound-links.js',
+          'https://analytics.https://picadores-de-codigo.vercel.app/js/plausible.outbound-links.js',
       },
       {
         source: '/api/event',
         destination:
-          'https://analytics.https://codeholics.vercel.app/api/event',
+          'https://analytics.https://picadores-de-codigo.vercel.app/api/event',
       },
     ];
   },
